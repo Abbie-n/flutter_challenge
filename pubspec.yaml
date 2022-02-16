@@ -17,6 +17,10 @@ dependencies:
   flutter_bloc: ^8.0.1
   # Value equality
   equatable: ^2.0.3
+  # Functional programming
+  dartz: ^0.10.0
+  # Network calls
+  dio: ^4.0.1
 
 dev_dependencies:
   flutter_test:
