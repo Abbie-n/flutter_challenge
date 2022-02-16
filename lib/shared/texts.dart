@@ -47,9 +47,11 @@ class Styles {
     String text, {
     double? fontSize,
     Color? color,
+    TextAlign? textAlign,
   }) {
     return Text(
       text,
+      textAlign: textAlign,
       style: TextStyle(
         fontSize: fontSize,
         fontWeight: FWt.bold,
