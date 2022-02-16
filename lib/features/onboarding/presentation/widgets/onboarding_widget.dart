@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_challenge/features/home/presentation/pages/home.dart';
 import 'package:flutter_challenge/shared/shared.dart';
 
 class OnboardingWidget extends StatefulWidget {
@@ -23,6 +24,13 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
   void jumpToLast() => setState(() {
         index = 3;
       });
+
+  void navigateHome() => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomeScreen(),
+        ),
+      );
 
   final List<String> titles = [
     'Neque porro',
@@ -114,7 +122,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                   margin: const EdgeInsets.symmetric(horizontal: 110),
                   child: CustomButton(
                     fontSize: 18,
-                    function: () => jumpToLast(),
+                    function: () => navigateHome(),
                     hasText: true,
                     height: 56,
                     width: 92,
