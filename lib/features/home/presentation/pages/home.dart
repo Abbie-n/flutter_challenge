@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_challenge/features/home/presentation/widgets/home_widget.dart';
 import 'package:flutter_challenge/shared/shared.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -33,26 +34,7 @@ class HomeScreen extends StatelessWidget {
                       crossAxisCount:
                           (orientation == Orientation.portrait) ? 2 : 3),
                   itemBuilder: (BuildContext context, int index) {
-                    return Column(
-                      children: [
-                        Container(
-                          height: 163,
-                          width: 163,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                              image: AssetImage('${Constants.bgIcon}3'.toPng),
-                            ),
-                          ),
-                        ),
-                        const YMargin(10),
-                        Styles.semiBold(
-                          'Woman in Oversized Suit',
-                          fontSize: 14,
-                          color: AppColors.white,
-                        ),
-                      ],
-                    );
+                    return const HomeWidget();
                   },
                 ),
               ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_challenge/features/onboarding/presentation/pages/onboarding.dart';
+import 'package:flutter_challenge/features/onboarding/pages/onboarding.dart';
 import 'package:flutter_challenge/shared/shared.dart';
 
 void main() => runApp(const MyApp());
