@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_challenge/features/onboarding/pages/onboarding.dart';
+import 'package:flutter_challenge/service_locator.dart' as sl;
 import 'package:flutter_challenge/shared/shared.dart';
 
-void main() => runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await sl.init();
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

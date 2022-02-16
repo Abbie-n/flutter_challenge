@@ -21,6 +21,7 @@ dependencies:
   dartz: ^0.10.0
   # Network calls
   dio: ^4.0.1
+  get_it: ^7.2.0
 
 dev_dependencies:
   flutter_test:
