@@ -28,7 +28,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
   void navigateHome() => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => HomeScreen(),
+          builder: (context) => const HomeScreen(),
         ),
       );
 

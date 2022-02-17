@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:flutter_challenge/core/utils/network/dio_client.dart';
 import 'package:flutter_challenge/features/home/data/models/data_model.dart';
 import 'package:flutter_challenge/features/home/data/models/data_request_model.dart';

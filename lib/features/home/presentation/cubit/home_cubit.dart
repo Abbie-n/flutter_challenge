@@ -25,7 +25,6 @@ class HomeCubit extends Cubit<HomeState> {
     emit(HomeLoading(initialData, initial: model.limit == 10));
     getData(model).then((newData) {
       model.limit = model.limit! + 10;
-      print('Limit: ${model.limit}');
       newData.fold(
         (failure) => emit(Error(_mapFailureToMessage(failure))),
         (res) => emit(HomeLoaded(res)),

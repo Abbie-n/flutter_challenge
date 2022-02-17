@@ -9,7 +9,7 @@ import 'package:flutter_challenge/features/home/presentation/widgets/home_widget
 import 'package:flutter_challenge/shared/shared.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
