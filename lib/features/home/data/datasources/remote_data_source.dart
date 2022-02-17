@@ -19,7 +19,7 @@ class RemoteDataSourceImpl implements RemoteDataSource {
     final response = await client.get(params: model.toJson());
     DataModel data = const DataModel();
     if (response != null) {
-      data = DataModel.fromJson(jsonEncode(response.data!));
+      data = DataModel.fromJson(response.data!);
       return data;
     } else {
       return data;

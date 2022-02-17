@@ -4,11 +4,19 @@ import 'package:flutter_challenge/features/home/data/datasources/remote_data_sou
 import 'package:flutter_challenge/features/home/data/repositories/data_repository_impl.dart';
 import 'package:flutter_challenge/features/home/domain/repositories/data_repository.dart';
 import 'package:flutter_challenge/features/home/domain/usecases/get_data_use_case.dart';
+import 'package:flutter_challenge/features/home/presentation/cubit/home_cubit.dart';
 import 'package:get_it/get_it.dart';
 
 final sl = GetIt.instance;
 
 Future<void> init() async {
+  // Cubits
+  sl.registerFactory(
+    () => HomeCubit(
+      getData: sl(),
+    ),
+  );
+
   // Use cases
   sl.registerLazySingleton(() => GetDataUseCase(sl()));
 

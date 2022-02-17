@@ -14,15 +14,16 @@ class HomeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          height: 163,
-          width: 163,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            image: DecorationImage(
-              image: AssetImage(image!),
-            ),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: FadeInImage.assetNetwork(
+            image: image!,
+            fit: BoxFit.cover,
+            placeholder: Constants.empty,
+            height: 163,
+            width: 200,
           ),
         ),
         const YMargin(10),
@@ -30,6 +31,7 @@ class HomeWidget extends StatelessWidget {
           title!,
           fontSize: 14,
           color: AppColors.white,
+          maxLines: 2,
         ),
       ],
     );

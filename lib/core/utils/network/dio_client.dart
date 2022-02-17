@@ -9,6 +9,7 @@ class DioClient {
       baseUrl: baseUrl,
       connectTimeout: 5000,
       receiveTimeout: 3000,
+      headers: {'Authorization': apiKey},
     ),
   )..interceptors.add(Logging());
 

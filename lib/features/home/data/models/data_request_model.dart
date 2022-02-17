@@ -1,12 +1,10 @@
-import 'dart:convert';
-
 class DataRequestModel {
-  final String? page;
-  final String? limit;
+  final int? page;
+  int? limit;
 
   DataRequestModel({
-    this.page,
-    this.limit,
+    this.page = 0,
+    this.limit = 10,
   });
 
   Map<String, dynamic> toJson() {
