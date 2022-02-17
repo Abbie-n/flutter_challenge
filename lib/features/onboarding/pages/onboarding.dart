@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_challenge/features/onboarding/presentation/widgets/onboarding_widget.dart';
+import 'package:flutter_challenge/features/onboarding/widgets/onboarding_widget.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({Key? key}) : super(key: key);

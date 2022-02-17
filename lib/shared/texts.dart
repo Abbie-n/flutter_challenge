@@ -28,13 +28,11 @@ class Styles {
     );
   }
 
-  static Text semiBold(
-    String text, {
-    double? fontSize,
-    Color? color,
-  }) {
+  static Text semiBold(String text,
+      {double? fontSize, Color? color, int? maxLines = 1}) {
     return Text(
       text,
+      maxLines: maxLines,
       style: TextStyle(
         fontSize: fontSize,
         fontWeight: FWt.semiBold,

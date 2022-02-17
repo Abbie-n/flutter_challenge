@@ -17,6 +17,11 @@ dependencies:
   flutter_bloc: ^8.0.1
   # Value equality
   equatable: ^2.0.3
+  # Functional programming
+  dartz: ^0.10.0
+  # Network calls
+  dio: ^4.0.1
+  get_it: ^7.2.0
 
 dev_dependencies:
   flutter_test:
@@ -30,7 +35,7 @@ flutter:
 
   assets:
     - assets/fonts/
-    - assets/icons/
+    - assets/images/
 
   fonts:
     - family: DM Sans
